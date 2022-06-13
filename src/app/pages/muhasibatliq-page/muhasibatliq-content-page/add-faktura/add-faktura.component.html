@@ -1,0 +1,69 @@
+<div class="muhasibatliqContainer">
+  <div class="col-3">
+    <app-sidebar></app-sidebar>
+  </div>
+
+  <div class="navbarContainer">
+    <app-module-navbar></app-module-navbar>
+
+
+    <div class="addFakturaCon d-flex">
+
+      <div class="col-9 mt-5 ms-5 p-3 fw-bold contentContainer shadow-sm">
+        <div class="addContainer">
+          Yeni
+        </div>
+
+        <form action="">
+          <ul class="yeniMezmunContainer mt-3">
+            <li class="fw-bold d-flex mx-1">
+              <p class="mezmunTitle">MƏZMUN</p>
+              <p class="meblegTitle">MƏBLƏĞ</p>
+            </li>
+
+            <li class="fw-bold d-flex my-3">
+              <input type="text" placeholder="Məzmun" name="mezmun" class="mezmun fw-normal" [(ngModel)]="mezmun">
+              <input type="text" placeholder="Məbləğ" name="mebleg" class="mebleg fw-normal" [(ngModel)]="mebleg">
+            </li>         
+
+            <!-- <li class="fw-bold d-flex my-3">
+          <input type="text" placeholder="Məzmun" class="mezmun fw-normal">
+          <input type="text" placeholder="Məbləğ" class="mebleg fw-normal">
+        </li> -->
+
+          </ul>
+
+          <button class="btn mt-4 yeniMezmunBtn"> <i class="bi bi-plus-lg"></i> Yeni məzmun </button>
+        </form>
+
+        <hr>
+
+        <div class="totalAmountsContainer mx-4">
+          <p class=" infoAmount">Cəmi: <span>{{amount}}</span></p>
+          <p class="infoAmount ">Cəmi(+ƏDV): <span class="fw-bolder">50.00 m</span> </p>
+        </div>
+
+      </div>
+
+
+      <div class="saveButtonsCon col-2 p-2 ms-3">
+        <button class="btn my-1 save" (click)="onSave()"> Yadda saxla</button>
+        <button class="btn my-1 tesdiqle"> Tesdiqle</button>
+        <button class="btn my-1 geri" (click)="onHandleGoBack()"> Geri</button>
+        <hr>
+
+        <ul class="avansInfoContainer">
+          <li class="fw-bold">Avans hesab faktura № <p class="fw-normal">1234567890</p>
+          </li>
+          <li class="fw-bold">Müştəri <p class="fw-normal">1234567890</p>
+          </li>
+          <li class="fw-bold">Tarix <p class="fw-normal">11.06.2022</p>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+
+
+  </div>

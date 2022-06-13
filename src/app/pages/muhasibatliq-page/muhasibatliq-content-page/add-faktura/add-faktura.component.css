@@ -1,0 +1,103 @@
+.contentContainer{
+    border-radius: 10px;
+    border: 1px solid rgb(240, 238, 238);
+}
+
+.saveButtonsCon {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.5%;
+}
+
+.tesdiqle {
+  border: 1px solid rgb(3, 112, 3);
+  color: rgb(3, 112, 3);
+}
+
+.save{
+    background-color: rgb(3, 112, 3);
+    color: #fff;
+}
+
+.geri{
+    color: rgb(3, 112, 3);
+    border: 1px solid grey;
+}
+
+.avansInfoContainer{
+    padding: 0;
+}
+
+.avansInfoContainer li{
+    margin: 0 2%;
+    list-style: none;
+}
+
+.yeniMezmunContainer{
+    margin-left: -5%;
+}
+
+.mezmunTitle{
+    font-weight: 600;
+    margin-right: 2%;
+    width: 70%;
+    padding: 1.5% 2%;
+    background-color: rgb(243, 243, 243);
+    color: rgb(135, 139, 129);
+}
+
+.meblegTitle{
+    font-weight: 600;
+    background-color: rgb(243, 243, 243);
+    width: 30%;
+    padding: 1.5% 2%;
+    color: rgb(135, 139, 129);
+}
+
+.mezmun{
+    font-weight: 600;
+    margin-right: 2%;
+    width: 69%;
+    padding: 1% 2%;
+    color: rgb(135, 139, 129);
+    border: 1px solid rgb(219, 219, 219) ;
+    border-radius: 7px;
+}
+
+.mebleg{
+    font-weight: 600;
+    width: 30%;
+    padding: 1% 2%;
+    color: rgb(135, 139, 129);
+    border: 1px solid rgb(219, 219, 219) ;
+    border-radius: 7px;
+}
+
+.yeniMezmunBtn{
+    font-weight: 600;
+}
+
+.totalAmountsContainer{
+    width: 30%;
+    float: right;
+}
+
+.infoAmount {
+    display: flex;
+    justify-content: space-between; 
+    font-weight: 600;
+    
+}
+
+.infoAmount span{
+    color: rgb(117, 117, 117);
+}
+
+.muhasibatliqContainer{
+    display: flex;
+}
+
+.navbarContainer{
+    width: 75%;
+    
+} 

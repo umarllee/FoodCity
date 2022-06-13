@@ -1,0 +1,59 @@
+<div class="muhasibatliqContainer">
+  <div class="col-3">
+    <app-sidebar></app-sidebar>
+  </div>
+  
+  <div class="navbarContainer">
+    <app-module-navbar></app-module-navbar>
+
+    <div class="col-11 mt-5 border mx-auto p-4 fw-bold contentContainer shadow-sm">
+
+  
+      <div class="addContainer">
+        Avans hesab faktura
+        <button class="btn " (click) = "onLoadAddFaktura()"> <i class="bi bi-plus-lg"></i> Yeni</button>
+      </div>
+    
+      <table class="table mt-4">
+        <thead>
+         <tr>
+            <th scope="col">#</th>
+            <th scope="col">Avans hesab faktura</th>
+            <th scope="col">Məzmun</th>
+            <th scope="col">Məbləğ</th>
+          </tr>
+        </thead>
+        <tbody class="text-secondary">
+          <!--  <tr>
+            <th scope="row"><i class="bi bi-justify"></i></th>
+            <td>Dolor sitamet</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+          </tr>
+          <tr>
+            <th scope="row"><i class="bi bi-justify"></i></th>
+            <td>Dolor sitamet</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+          </tr>
+          <tr>
+            <th scope="row"><i class="bi bi-justify"></i></th>
+            <td>Dolor sitamet</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+          </tr> -->
+          <tr *ngFor = "let f of fakturas">
+            <th scope="row"><i class="bi bi-justify"></i></th>
+            <td>{{f.faktura}}</td>
+            <td>{{f.mezmun}}</td> 
+            <td>{{f.mebleg}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    
+    
+  </div>
+
+</div>

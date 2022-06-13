@@ -1,0 +1,47 @@
+.contentContainer {
+  border-radius: 10px;
+}
+
+.title {
+  border-bottom: 1px solid red;
+}
+
+.bi-justify {
+  color: #fff;
+  background-color: rgb(119, 150, 120);
+  padding: 5% 9%;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+tbody tr {
+  color: black;
+  font-weight: normal;
+}
+
+thead th {
+  font-weight: 600;
+}
+
+.addContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addContainer button {
+  font-weight: 600;
+  background-color: rgb(3, 112, 3);
+  color: #fff;
+  padding: 0.7% 4%;
+  font-size: 17px;
+}
+
+
+.muhasibatliqContainer{
+  display: flex;
+}
+
+.navbarContainer{
+  width: 75%;
+  
+} 

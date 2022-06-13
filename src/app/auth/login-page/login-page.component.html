@@ -1,0 +1,20 @@
+<div class="loginContainer pt-4 pb-5 shadow-lg ">
+  <div class="logoCon "> <img [src]="logoUrl" alt="" class="logo"></div>
+
+  <form class="form-container mx-auto"> 
+    <div class="mb-3">
+      <label for="inputLogin" class="form-label">Login</label>
+      <input type="text" class="form-control" id="inputLogin">
+    </div>
+    <div class="mb-3">
+      <label for="inputPassword" class="form-label">Şifrə</label>
+      <input type="password" class="form-control" id="inputPassword">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="rememberMe">
+      <label class="form-check-label text-secondary" for="rememberMe">Remember me <span class="text-success">Şifrəni
+          unutmuşam</span></label>
+    </div>
+    <button type="submit" class="btn btn-login fw-bold text-light" (click) = "onLoadMain()">Daxil ol</button>
+  </form>
+</div>
